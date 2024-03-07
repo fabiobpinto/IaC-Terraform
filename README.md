@@ -1,2 +1,5 @@
 # IaCTerraform
-Estudo do Terraform
+
+Repositorio de Estudo do Terraform.
+
+
