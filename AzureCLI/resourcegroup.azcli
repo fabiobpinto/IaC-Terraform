@@ -1,0 +1,14 @@
+#Verificar a Versão do AzureCLI
+az version
+
+#login Azure
+az login 
+
+#criando ResourceGroups
+az group create -n RGAzureCLI -l brazilsouth
+
+#list ResourceGroups
+az group list
+
+#Ecluir ResourceGroup
+az group delete -n rgazurecli
