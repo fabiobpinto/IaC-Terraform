@@ -1,0 +1,5 @@
+erraform é uma ferramenta criada para construir, alterar e criar versões de infraestrutura. Portanto, ela não é uma linguagem nem um framework, mas sim um recurso usado no DevOps para garantir mais agilidade e segurança nas entregas. 
+
+Como ela foi construída com base em GoLang, ela é muito simples, e as suas dependências estão contidas no próprio binário.
+
+Gerir uma infraestrutura em nuvem dá muito trabalho, principalmente com o crescimento do cloud público, como é o caso do AWS. Mas ao fazer isso com código, essa tarefa fica mais fácil. 
