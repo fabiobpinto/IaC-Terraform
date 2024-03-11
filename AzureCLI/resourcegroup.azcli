@@ -11,4 +11,4 @@ az group create -n RGAzureCLI -l brazilsouth
 az group list
 
 #Ecluir ResourceGroup
-az group delete -n rgazurecli
+az group delete -n RGAzureCLI
