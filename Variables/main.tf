@@ -21,7 +21,7 @@ resource "azurerm_resource_group" "Terraform" {
 }
 
 resource "azurerm_virtual_network" "vnet" {
-  provider = azurerm.VSCodeProfessional
+  provider            = azurerm.VSCodeProfessional
   name                = "vnet"
   resource_group_name = azurerm_resource_group.Terraform.name
   location            = azurerm_resource_group.Terraform.location
