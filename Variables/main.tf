@@ -17,7 +17,9 @@ resource "azurerm_resource_group" "Terraform" {
   provider = azurerm.VSCodeProfessional
   name     = var.namerg
   location = var.location
-  tags     = var.tags
+  tags     = merge(var.tags, {
+    Treinamento = "Terraform"
+})
 }
 
 resource "azurerm_virtual_network" "vnet" {
