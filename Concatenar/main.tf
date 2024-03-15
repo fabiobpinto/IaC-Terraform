@@ -18,8 +18,8 @@ variable "vnet-ips" {
   default = ["10.0.0.0/16"]
 }
 
-resource "azurerm_resource_group" "rg-vnet" {
-  name     = "rg-vnet"
+resource "azurerm_resource_group" "rg_vnet" {
+  name     = "rg_vnet"
   provider = azurerm.VSCodeProfessional
   location = "eastus"
 }
@@ -27,7 +27,7 @@ resource "azurerm_resource_group" "rg-vnet" {
 resource "azurerm_virtual_network" "vnet" {
   provider            = azurerm.VSCodeProfessional
   name                = "vnet"
-  resource_group_name = "rg-vnet"
+  resource_group_name = "rg_vnet"
   location            = "eastus"
   address_space       = concat(var.vnet-ips, ["172.10.0.0/16"])
 }
