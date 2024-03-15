@@ -13,7 +13,7 @@ provider "azurerm" {
   alias = "VSCodeProfessional"
 }
 
-resource "azurerm_resource_group" "rg-strings" {
+resource "azurerm_resource_group" "rg_strings" {
   name     = "rg-date"
   provider = azurerm.VSCodeProfessional
   location = "eastus"
