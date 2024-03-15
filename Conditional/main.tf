@@ -29,6 +29,7 @@ resource "azurerm_virtual_network" "vnet" {
   name                = "vnet"
   resource_group_name = "rg_vnet"
   location            = "eastus"
+  # condition ? verdadeiro : falso
   address_space       = length(var.vnet-ips) == 0 ? ["10.0.0.0/16", "172.16.0.0/16"] : var.vnet-ips
 }
 
@@ -37,4 +38,3 @@ output "vnets-ips" {
 }
 
 # https://developer.hashicorp.com/terraform/language/expressions/conditionals
-# condition ? verdadeiro : falso
