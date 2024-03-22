@@ -1,13 +1,3 @@
-# terraform {
-#   required_providers {
-#     azurerm = {
-#       source  = "hashicorp/azurerm"
-#       version = "3.95.0"
-#     }
-#   }
-# }
-
-
 resource "azurerm_resource_group" "appservice_rg" {
   name     = "appservice_rg_${lower(var.ambiente)}"
   location = var.location
