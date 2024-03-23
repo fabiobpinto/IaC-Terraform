@@ -18,8 +18,9 @@ Terraform is an infrastructure as code tool that lets you build, change, and ver
 |Provisioners| Alguns providers Random, azurerm, file  |
 |StateStorage| Salvar o STATE no Storage  |
 |Strings| Usando Stringsd  |
-|TerraformEmPastasAppService| Arquivos separados em pastas   |
-|TerraformEmPastasComTFVARS| Arquivos tfvars separados em pastas  |
+|ProjetoEmPastasAppService| Arquivos separados em pastas   |
+|ProjetoEmPastasComTFVARS| Arquivos tfvars separados em pastas  |
+|ProjetoEmPastasComTFVARS| Arquivos tfvars e State separados em pastas  |
 |Variables| Uso de Variaveis  |
 |VSCode-ResourceGroup| Criar Resource Group pelo VSCode  |
 
