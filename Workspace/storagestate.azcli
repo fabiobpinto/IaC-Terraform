@@ -1,0 +1,14 @@
+# Fazer login no Azure
+az login
+
+# Criar o Resource Group
+az group create --location eastus --name terraformstate 
+
+# Criar o Storage Account
+az storage account create --location eastus --name tfstagetreinamentoterra --resource-group terraformstate --sku Standard_LRS
+
+# Criar o Container
+az storage container create --name terraformstate --account-name tfstagetreinamentoterra
+
+# Listar as Keys dos Storage
+az storage account keys list --account-name tfstagetreinamentoterra

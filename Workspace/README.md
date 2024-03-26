@@ -5,6 +5,13 @@ Podemos reutilizar os módulos para vários projetos.
 
 Mais complexo.
 
+Fazer a criação dos Workspaces (dev, test e prod)
+Fazer os selects de cada 
+Ao fazer o `terraform plan` ele cria os remotes states no Container
+Fazer o apply de cada
+
+
+
 ### Alguns comandos do Terraform Workspace
 
 Criar Workspace:

@@ -25,3 +25,4 @@ Terraform is an infrastructure as code tool that lets you build, change, and ver
 |VSCode-ResourceGroup| Criar Resource Group pelo VSCode  |
 |Modules| Usando estrutura em modulos  |
 |Workspace| Usando estrutura Workspace  |
+|Yeoman| Ferramenta de criação de Templates  |
