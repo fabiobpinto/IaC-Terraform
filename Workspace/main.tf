@@ -3,7 +3,7 @@ terraform {
     resource_group_name  = "terraformstate"
     storage_account_name = "tfstagetreinamentoterra"
     container_name       = "terraformstate"
-    key                  = "eEVTV8OhbtA4XhX6TOfWev7u4j/gPWSFYnrcKbaEdMFCf1fxTYAuKLUu4KUgEBTLhauYZnteE5x9+ASta4MaqQ=="
+    key                  = ""
   }
 }
 
