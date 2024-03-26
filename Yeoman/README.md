@@ -7,7 +7,7 @@ Framework de Criação de Templates
 Ter o NodeJS instalado.
 
 No PowerShell usar o comando para instalação do Yeoman
-`npm install -g yo`
+`npm install -g yo@4.3.1 generator-generator`
 
 Verificar a versão do Yeoman
 `yo --version`
