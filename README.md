@@ -26,3 +26,4 @@ Terraform is an infrastructure as code tool that lets you build, change, and ver
 |Modules| Usando estrutura em modulos  |
 |Workspace| Usando estrutura Workspace  |
 |Yeoman| Ferramenta de criação de Templates  |
+|ImportFromAzure| Infra importado do Azure|
