@@ -29,9 +29,13 @@ Terraform is an infrastructure as code tool that lets you build, change, and ver
 |ImportFromAzure| Infra importado do Azure|
 |SecurityKeyVault| Salvar senha no KeyVault|
 
-
+## Analises dos códigos
 Como segurança dos nossos códigos podemos usar o Checkov para verificar as vulnerabilidades do mesmo.
 Ele sugere correções a serem feitas nos códigos de IaC.
 https://www.checkov.io/
 
+Analise de Arquivo:
+`chechov -f main.tf`
 
+Analise de Diretorio
+`chechov -d infra`
