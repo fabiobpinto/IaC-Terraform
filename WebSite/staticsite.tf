@@ -1,8 +1,3 @@
-terraform {
-  backend "azurerm" {    
-  }
-}
-
 provider "azurerm" {
   subscription_id = "ff882453-92d9-4cdd-a627-966b0727aeec"
   features {
@@ -33,3 +28,11 @@ resource "azurerm_storage_account" "storage" {
   }
 }
 
+resource "azurerm_storage_blob" "website_files" {
+  name                   = "index.html"
+  storage_account_name   = azurerm_storage_account.storage.name
+  storage_container_name = "$web"
+  type                   = "Block"
+  source                 = "index.html"
+  content_type           = "text/html"
+}
