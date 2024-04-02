@@ -14,7 +14,7 @@ resource "azurerm_resource_group" "rgappserviceslot" {
   location = var.location
 }
 
-resource "azurerm_service_plan" "serviceplam" {
+resource "azurerm_service_plan" "serviceplan" {
   name                = "appplan-slots"
   resource_group_name = azurerm_resource_group.rgappserviceslot.name
   location            = var.location
@@ -27,7 +27,7 @@ resource "azurerm_linux_web_app" "webapp" {
   name                = "pitocco-web-app"
   resource_group_name = azurerm_resource_group.rgappserviceslot.name
   location            = var.location
-  service_plan_id     = azurerm_service_plan.serviceplam.id
+  service_plan_id     = azurerm_service_plan.serviceplan.id
 
   site_config {
     minimum_tls_version = "1.2"

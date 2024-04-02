@@ -30,6 +30,7 @@ Terraform is an infrastructure as code tool that lets you build, change, and ver
 |SecurityKeyVault| Salvar senha no KeyVault|
 |WebSite| Criação de WebSite Estático com Terraform|
 |AppServicesSlots| Criação de AppServices com Slots com Terraform|
+|TrafficManager| Criação de Traffic Manager|
 
 
 ## Analises dos códigos
