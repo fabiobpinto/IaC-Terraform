@@ -29,6 +29,7 @@ Terraform is an infrastructure as code tool that lets you build, change, and ver
 |ImportFromAzure| Infra importado do Azure|
 |SecurityKeyVault| Salvar senha no KeyVault|
 |WebSite| Criação de WebSite Estático com Terraform|
+|AppServicesSlots| Criação de AppServices com Slots com Terraform|
 
 
 ## Analises dos códigos
