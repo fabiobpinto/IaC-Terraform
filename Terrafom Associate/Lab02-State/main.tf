@@ -1,7 +1,7 @@
 # Create Resource Group
 resource "azurerm_resource_group" "rg-acme" {
   name     = "rg-acme-from-terraform"
-  location = "brazilsouth"
+  location = "eastus"
 }
 
 # Create Virtual Network (VNet)
@@ -13,18 +13,26 @@ resource "azurerm_virtual_network" "vnet-acme" {
 }
 
 # Create subnet 01 on VNet
-resource "azurerm_subnet" "sub-acme" {
-  name                 = "sub-acme-from-terraform"
+resource "azurerm_subnet" "sub-acme01" {
+  name                 = "sub-acme01-from-terraform"
   resource_group_name  = azurerm_resource_group.rg-acme.name
   address_prefixes     = ["10.0.1.0/24"]
   virtual_network_name = azurerm_virtual_network.vnet-acme.name
 }
 
 # Create subnet 02 on VNet
-resource "azurerm_subnet" "sub-acme2" {
-  name                 = "sub-acme2-from-terraform"
+resource "azurerm_subnet" "sub-acme02" {
+  name                 = "sub-acme02-from-terraform"
   resource_group_name  = azurerm_resource_group.rg-acme.name
   address_prefixes     = ["10.0.2.0/24"]
+  virtual_network_name = azurerm_virtual_network.vnet-acme.name
+}
+
+# Create subnet 03 on VNet
+resource "azurerm_subnet" "sub-acme03" {
+  name                 = "sub-acme03-from-terraform"
+  resource_group_name  = azurerm_resource_group.rg-acme.name
+  address_prefixes     = ["10.0.3.0/24"]
   virtual_network_name = azurerm_virtual_network.vnet-acme.name
 }
 
@@ -63,7 +71,7 @@ resource "azurerm_network_interface" "nic-acme" {
 
   ip_configuration {
     name                          = "internal"
-    subnet_id                     = azurerm_subnet.sub-acme.id
+    subnet_id                     = azurerm_subnet.sub-acme01.id
     private_ip_address_allocation = "Dynamic"
     public_ip_address_id          = azurerm_public_ip.pip-acme.id
   }

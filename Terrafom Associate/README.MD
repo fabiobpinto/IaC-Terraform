@@ -82,7 +82,7 @@ terraform -install-autocomplete
 
 10. **terraform graph**: Gera um gráfico visual da configuração do Terraform.
 
-11. **terraform state**: Gerencia o estado do Terraform, permitindo visualizar, mover e remover recursos do estado.
+11. **terraform state**: Gerencia o estado do Terraform, permitindo visualizar, listar, mover e remover recursos do estado.
 
 12. **terraform taint**: Marca um recurso específico para ser destruído e recriado na próxima execução do terraform apply.
 
