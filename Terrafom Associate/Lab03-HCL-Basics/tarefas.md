@@ -1,8 +1,8 @@
-Objetivos do Lab:
+## Objetivos do Lab:
 
-Criar um Storage Account no Azure utilizando os blocos do Terraform.
+### Criar um Storage Account no Azure utilizando os blocos do Terraform.
 
-Conceitos HCL Basics
+#### Conceitos HCL Basics
 
 0 - Criar o Resource Group no Azure
 1 - Criar o Terraform Settings Block
