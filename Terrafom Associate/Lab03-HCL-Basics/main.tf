@@ -1,4 +1,4 @@
-# Terraform Settings Block
+# 01 - Criar o Terraform Settings Block
 terraform {
   required_providers {
     azurerm = {
@@ -8,16 +8,15 @@ terraform {
   }
 }
 
-# Terraform Modules Block (Exemplo de utilização de módulo)
+# 08 - Criar o Terraform Modules Block - Utilização do Módulo
 module "storage_module" {
   source = "./storage_module"
 }
 
-# Terraform Output Values Block
+# 07 - Criar o Terraform Output Values Block
 output "storage_account_id" {
   value = module.storage_module.storage_account_id
 }
-
 output "storage_account_name" {
   value = module.storage_module.storage_account_name
 }

@@ -1,23 +1,21 @@
-#Data Block - Import Resource Group do Azure Portal
+# 03 - Criar o Terraform Data Block (Resource Group) - Import do Azure Portal
 data "azurerm_resource_group" "rg-azure-terraform" {
     name     = "rg-acme-data-portal"
 }
 
-#Variables Locals Block
-# Definindo variáveis locais para o módulo
+# 04 - Criar o Terraform Local Variables Block
 locals {
     storage_account_sku = "Standard"
 }
 
-# Variables Block
-# Definindo variáveis para o módulo
+# 05 - Criar o Terraform Input Variables Block
 variable "account_replication_type" {
     description = "Tipo de Replicação do Storage Account"
     default     = "LRS"
     type        = string
 }
 
-# Terraform Resource Block - Criação do Storage Account
+# 06 - Criar o Terraform Resource Block (Storage Account) - Criação do Storage Account
 resource "azurerm_storage_account" "storage_account" {
     name                     = "stacmepoc"
     resource_group_name      = data.azurerm_resource_group.rg-azure-terraform.name
@@ -30,11 +28,10 @@ resource "azurerm_storage_account" "storage_account" {
     }
 }
 
-# Terraform Output Values Block
+# 07 - Criar o Terraform Output Values Block
 output "storage_account_id" {
     value = azurerm_storage_account.storage_account.id
 }
-
 # Terraform Output Values Block
 output "storage_account_name" {
     value = azurerm_storage_account.storage_account.name
