@@ -26,7 +26,3 @@ output "storage_account_name" {
 module "rg_import_module" {
   source = "./resource_group"
 }
-
-# module "pip_import_module" {
-#   source = "./public_ip"
-# }
