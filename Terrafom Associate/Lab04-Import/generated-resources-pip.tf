@@ -19,9 +19,9 @@ resource "azurerm_public_ip" "pip-import" {
   reverse_fqdn            = null
   sku                     = "Standard"
   sku_tier                = "Regional"
-  tags                    = {
+  tags = {
     import   = "OK"
     ambiente = "dev"
   }
-  zones                   = ["1", "2", "3"]
+  zones = ["1", "2", "3"]
 }
