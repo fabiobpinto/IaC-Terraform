@@ -39,3 +39,21 @@ output "dns_id" {
 }
 
 ################################################################################
+# 06 - Configurar o modulo publico naming em nosso codigo
+#module Terraform Registry
+module "naming" {
+  source  = "Azure/naming/azurerm"
+  version = "0.4.2"
+  suffix  = ["acme"]
+}
+
+
+resource "azurerm_resource_group" "rg_01" {
+  name     = module.naming.resource_group.name_unique
+  location = "East US"
+}
+
+output "rg_01_name" {
+  value = azurerm_resource_group.rg_01.name
+
+}
