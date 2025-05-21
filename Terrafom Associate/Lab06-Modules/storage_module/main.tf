@@ -16,7 +16,7 @@ resource "random_string" "random" {
   length  = 8
   special = false
   upper   = false
-  numeric  = true
+  numeric = true
 }
 
 resource "azurerm_storage_account" "storage_account" {
@@ -28,6 +28,7 @@ resource "azurerm_storage_account" "storage_account" {
   tags = {
     environment = "dev"
     project     = "terraform"
+    group       = "IT Department"
   }
 }
 

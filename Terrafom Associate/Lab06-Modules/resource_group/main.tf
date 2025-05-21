@@ -3,7 +3,7 @@ resource "azurerm_resource_group" "rg_import" {
   name     = "rg-acme-import-portal"
   location = "East US"
   tags = {
-    import = "OK"
+    import   = "OK"
     ambiente = "dev"
   }
 }
