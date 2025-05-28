@@ -1,8 +1,8 @@
 terraform {
   backend "azurerm" {
-# O conteudo do arquivo backend_state.hcl poderia estar todo aqui
-# para chamar o backend do terraform damos o comando:
-# terraform init -backend-config=backend_state.hcl
+    # O conteudo do arquivo backend_state.hcl poderia estar todo aqui
+    # para chamar o backend do terraform damos o comando:
+    # terraform init -backend-config=backend_state.hcl
   }
   required_providers {
     azurerm = {
@@ -44,12 +44,23 @@ output "dns_id" {
 }
 
 ################################################################################
-# 06 - Configurar o modulo publico naming em nosso codigo
 #module Terraform Registry
 module "naming" {
   source  = "Azure/naming/azurerm"
   version = "0.4.2"
   suffix  = ["acme"]
+}
+
+################################################################################
+# Modulo SQL Server
+module "sql_module" {
+  source                       = "./sql_server"
+  sql_name                     = var.sql_name
+  rg_name                      = module.rg_import_module.rg_name_import
+  rg_location                  = var.sql_location
+  sql_version                  = var.sql_version
+  administrator_login          = var.administrator_login
+  administrator_login_password = var.administrator_login_password
 }
 
 
