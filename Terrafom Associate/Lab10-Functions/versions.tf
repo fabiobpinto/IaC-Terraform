@@ -1,7 +1,7 @@
 # Settings Block
 terraform {
   backend "azurerm" {
-    # resource_group_name  = "rg-acme-state-remote"
+    resource_group_name  = "rg-terraform-backend"
     storage_account_name = "stterraform0backend"
     container_name       = "terraform"
     key                  = "terraform2.tfstate"
