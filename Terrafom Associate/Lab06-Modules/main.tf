@@ -38,6 +38,10 @@ output "dns_id" {
   value = module.dns_zone_module.dns_id
 }
 
+output "dns_name" {
+  value = module.dns_zone_module.dns_name
+}
+
 ################################################################################
 # 06 - Configurar o modulo publico naming em nosso codigo
 #module Terraform Registry
