@@ -22,4 +22,17 @@ backend_state.hcl
 terraform init -backend-config="sbackend_state.hcl"
 ```
 
+10 - Reconfigurar o seu Backend
+```bash
+terraform init -reconfigure -backend-config="sbackend_state.hcl"
+```
+
+Alternativa via CLI:
+````bash
+terraform init -reconfigure \
+-backend-config "storage_account_name=$TF_BACKEND_STORAGE_ACCOUNT"  \
+-backend-config "key=$TF_BACKEND_KEY"
+.... demais codigos
+````
+
 [Documentação de Configuração](https://developer.hashicorp.com/terraform/language/backend/azurerm)
