@@ -123,3 +123,6 @@ Terraform Enterprise é a versão on-premises do Terraform Cloud, oferecendo f
 - *Auditoria e Conformidade*: Fornece logs detalhados e trilhas de auditoria para conformidade regulatória.
 
 Essas plataformas são projetadas para facilitar a adoção do Terraform em ambientes corporativos, oferecendo recursos adicionais para segurança, colaboração e automação.
+
+ ### Backend block
+ [3](https://developer.hashicorp.com/terraform/language/backend/azurerm): [Azurerm Backend](https://developer.hashicorp.com/terraform/language/backend/azurerm)
