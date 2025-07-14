@@ -31,6 +31,7 @@ Terraform is an infrastructure as code tool that lets you build, change, and ver
 |WebSite| Criação de WebSite Estático com Terraform|
 |AppServicesSlots| Criação de AppServices com Slots com Terraform|
 |TrafficManager| Criação de Traffic Manager|
+|Terraform Associate| Estudo dos principais topicos cobrado na certificação|
 
 
 ## Analises dos códigos

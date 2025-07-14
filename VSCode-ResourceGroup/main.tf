@@ -8,13 +8,13 @@ terraform {
 }
 
 provider "azurerm" {
-  subscription_id = "c30c5829-2a81-4982-8141-09566ee674d6"
+  subscription_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   features {}
   alias = "VSCodeDev"
 }
 
 provider "azurerm" {
-  subscription_id = "ff882453-92d9-4cdd-a627-966b0727aeec"
+  subscription_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   features {}
   alias = "VSCodeProfessional"
 }

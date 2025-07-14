@@ -1,7 +1,7 @@
 terraform {
   backend "azurerm" {
     resource_group_name  = "terraformstate"
-    subscription_id      = "ff882453-92d9-4cdd-a627-966b0727aeec"
+    subscription_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
     storage_account_name = "terraformstatecloud"
     container_name       = "terraformstate"
     key                  = "" #Sua Key do Storage Account > Access Keys
@@ -9,7 +9,7 @@ terraform {
 }
 
 provider "azurerm" {
-  subscription_id = "ff882453-92d9-4cdd-a627-966b0727aeec"
+  subscription_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   features {}
   alias = "VSCodeProfessional"
 }

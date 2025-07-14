@@ -1,5 +1,5 @@
 provider "azurerm" {
-  subscription_id = "ff882453-92d9-4cdd-a627-966b0727aeec"
+  subscription_id = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
   features {
   }
 }
@@ -21,7 +21,6 @@ resource "azurerm_storage_account" "storage" {
   account_replication_type  = "LRS"
   account_tier              = "Standard"
   account_kind              = "StorageV2"
-  enable_https_traffic_only = true
 
   static_website {
     index_document = "index.html"
