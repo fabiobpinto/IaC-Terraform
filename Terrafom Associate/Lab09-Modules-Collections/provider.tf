@@ -4,5 +4,4 @@ provider "azurerm" {
   # client_id       = "xxxx-xxxxxxx-xxxxxxxx-xxxxx-xxxx"
   # client_secret   = "xxxx-xxxxxxx-xxxxxxxx-xxxxx-xxxx"
   # tenant_id       = "xxxx-xxxxxxx-xxxxxxxx-xxxxx-xxxx"
-  # skip_provider_registration = true
 }
