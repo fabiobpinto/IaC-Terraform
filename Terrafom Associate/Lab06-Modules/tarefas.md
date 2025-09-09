@@ -1,6 +1,6 @@
 ## Objetivos do Lab:
 
-### Criar um modulo de Zonas de DNS no Azure, Cirar outpus para nosso modulo de resource group importado nas ultimas aulas, configurar nosso modulo para consumir variaveis de modulos filhs, utilizar modulos com origem do repositorio publico da Hashicorp e versionar nossos modulosde acordo com as versoes disponiveis no registry.
+### Criar um modulo de Zonas de DNS no Azure, Criar outputs para nosso modulo de resource group importado nas ultimas aulas, configurar nosso modulo para consumir variaveis de modulos filhs, utilizar modulos com origem do repositorio publico da Hashicorp e versionar nossos modulosde acordo com as versoes disponiveis no registry.
 
 #### Terraform Modules
 

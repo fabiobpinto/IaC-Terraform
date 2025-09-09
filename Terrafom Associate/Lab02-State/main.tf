@@ -115,5 +115,6 @@ resource "azurerm_virtual_machine" "vm-acme" {
     environment = "acme"
     provisioner = "terraform"
     aula01      = "nova tag"
+    owner       = "Fabio"
   }
 }
